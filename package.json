@@ -1,0 +1,19 @@
+{
+  "name": "unknown-module-local-access",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Account-free local root SSH and owner-controlled key pairing, independent of LG account authentication.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node build.js --check",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "yauzl": "3.4.0",
+    "yazl": "3.3.1",
+    "acorn": "8.18.0"
+  }
+}

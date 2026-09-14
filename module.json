@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "local-access",
+  "version": "1.0.2",
+  "minCoreVersion": "0.4.6",
+  "title": "Local Access",
+  "description": "Account-free local root SSH and owner-controlled key pairing, independent of LG account authentication.",
+  "disableDescription": "Stops this module's SSH and pairing servers, which can disconnect sessions using port 9922. Saved preferences, unrelated keys and independent recovery listeners are retained. Keep another working recovery connection first.",
+  "publisher": "Unknown Digital and Unknown Suite contributors",
+  "license": "MIT",
+  "requiresRoot": true,
+  "entry": "module.js",
+  "permissions": [
+    "Runs as root; declarations are not a sandbox",
+    "Starts/stops its owned Dropbear listener on port 9922 and optional key server on port 9991",
+    "Maintains its own key entry but preserves unrelated authorized keys and independent recovery listeners"
+  ],
+  "actions": {
+    "status": {
+      "title": "View current status",
+      "description": "Shows requested and running states for SSH and the pairing-key server, ports and missing dependencies. The private pairing passphrase is omitted here.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "health": {
+      "title": "Check module health",
+      "description": "Checks that each requested local-access service is running. It does not test an actual login from another device or certify your network's security.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "maintenance": {
+      "title": "Reapply saved settings",
+      "description": "Starts this module's SSH or pairing server only if that service is saved as ON but is not running. It does not renew an LG session or enable a service saved as OFF.",
+      "readOnly": false,
+      "parameters": {}
+    },
+    "setService": {
+      "title": "Apply local access setting",
+      "readOnly": false,
+      "parameters": {
+        "service": {
+          "type": "string",
+          "title": "Service to change",
+          "enum": [
+            "ssh",
+            "keyserver"
+          ],
+          "enumLabels": {
+            "ssh": "Root SSH access (port 9922)",
+            "keyserver": "Pairing-key server (port 9991)"
+          },
+          "enumDescriptions": {
+            "ssh": "Allows a paired computer on your LAN to log in as unjailed root. Turning it off can disconnect that session; preserve independent recovery access.",
+            "keyserver": "Serves an encrypted private key on your LAN for pairing. Enable it only while adding a trusted computer, then turn it off. Already paired SSH access still works."
+          }
+        },
+        "enabled": {
+          "type": "boolean",
+          "title": "Requested service state",
+          "description": "ON starts the selected service and keeps it enabled. OFF stops it and prevents this module from automatically restarting it.",
+          "currentValue": {
+            "selector": "service",
+            "paths": {
+              "ssh": [
+                "sshEnabled"
+              ],
+              "keyserver": [
+                "keyServerEnabled"
+              ]
+            }
+          }
+        }
+      },
+      "description": "Starts or stops only the selected service owned by this module. Another service already using its port is not forcibly stopped.",
+      "confirmation": {
+        "message": "Confirm disconnecting SSH sessions using this module's port 9922.",
+        "when": {
+          "service": "ssh",
+          "enabled": false
+        }
+      }
+    },
+    "showPairing": {
+      "title": "Show private pairing information",
+      "readOnly": true,
+      "parameters": {},
+      "description": "Shows the TV address, ports, encrypted-key download address and private passphrase for pairing a trusted computer. Do not share or stream this screen."
+    }
+  }
+}
