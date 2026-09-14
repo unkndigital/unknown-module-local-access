@@ -1,0 +1,45 @@
+{
+  "id": "local-access",
+  "version": "1.0.2",
+  "coreVersion": "0.4.6",
+  "home": false,
+  "inputs": [
+    {
+      "source": "LICENSE",
+      "target": "LICENSE"
+    },
+    {
+      "source": "MODULE.md",
+      "target": "README.md"
+    },
+    {
+      "source": "module-support.js",
+      "target": "module-support.js"
+    },
+    {
+      "source": "module.js",
+      "target": "module.js"
+    },
+    {
+      "source": "module.json",
+      "target": "module.json"
+    },
+    {
+      "source": "runtime/unknown-home-access.js",
+      "target": "runtime/unknown-home-access.js"
+    },
+    {
+      "source": "runtime/unknown-home-keyserver.js",
+      "target": "runtime/unknown-home-keyserver.js"
+    }
+  ],
+  "sourceFiles": [
+    "LICENSE",
+    "MODULE.md",
+    "module-support.js",
+    "module.js",
+    "module.json",
+    "runtime/unknown-home-access.js",
+    "runtime/unknown-home-keyserver.js"
+  ]
+}

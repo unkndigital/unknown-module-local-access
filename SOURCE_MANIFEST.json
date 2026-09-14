@@ -1,0 +1,116 @@
+{
+  "id": "local-access",
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "572234ff94a780da9248b867a9c6d208b18b702864d847e1cb4a42bfc1b560f3",
+      "bytes": 51
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "351ba46fc3dfe9e631667f04fb7da305b8605bb1974d09f2a811e92239b856d2",
+      "bytes": 32
+    },
+    {
+      "path": "Build.cmd",
+      "sha256": "3e66bb628af029a43d740f9ab5c4553e5ec2e80b59aece1e4b2b41d1a86049a3",
+      "bytes": 255
+    },
+    {
+      "path": "Build.ps1",
+      "sha256": "e26686fca8abc6b28b6aa79e922e610ac6087dd36f3c8c36683082c83beebf55",
+      "bytes": 1656
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "ed18054c1e42887a48a91b06aceb534235e77bb6d756a0776384d361cff0dac2",
+      "bytes": 1103
+    },
+    {
+      "path": "MODULE.md",
+      "sha256": "67739f938c2afbc91265297ece94638561ff65752d2192285504905930f8cd71",
+      "bytes": 2217
+    },
+    {
+      "path": "OWNER_USE.md",
+      "sha256": "998f709fec86aeccc2d2eefb72d1cd161b09bfea67557dd24d3429dac10fd7b6",
+      "bytes": 1297
+    },
+    {
+      "path": "README.md",
+      "sha256": "8be292db6bcb75d3458f3a1f8cab8a0e3be9a42c22b2f61a8b9ba85a0cf9f209",
+      "bytes": 2944
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "a3e328ecf9269462d8df8c45d30d4934c184bdd14faf93c04446478946962532",
+      "bytes": 1024
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "sha256": "dd3845a1f297a568e4b0bb2c31ae5e8fa798181aff0e64681bfa50878c806c95",
+      "bytes": 89
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "53c653b665d4a2071d673883d81628a452989c49f0681cdca108fcb9992458ac",
+      "bytes": 482
+    },
+    {
+      "path": "build-config.json",
+      "sha256": "1f88738d7cd2540ee2f78509ef10cc93a7f4e3aa039df237ae1a853730031b67",
+      "bytes": 901
+    },
+    {
+      "path": "build.js",
+      "sha256": "608d61aaec5b0e23b66538b373afd7dfad68f40693ec015439d22e003576fc0d",
+      "bytes": 3848
+    },
+    {
+      "path": "local-access-1.0.2.zip",
+      "sha256": "7c0324a172b93082baa40d98644f1746675cf4bac097cd136a63bd8c5da708f0",
+      "bytes": 11068
+    },
+    {
+      "path": "module-archive.js",
+      "sha256": "07a177a6367921e7c71e5909735712c9e00b26e8f50d20955680e7ddcbfbed09",
+      "bytes": 14682
+    },
+    {
+      "path": "module-support.js",
+      "sha256": "61a3ce4965b535df79f0ff4ce0d0bcd76a88c7cc38fdb9f5c5c4385bacfd06d9",
+      "bytes": 3244
+    },
+    {
+      "path": "module.js",
+      "sha256": "b2da58d96bd07a4b94b7e1533291713588ca189a306d9f5c2d7f8cbed1ebb3d9",
+      "bytes": 2123
+    },
+    {
+      "path": "module.json",
+      "sha256": "a9d0b8e85c8088fc2dc5b91c0ae21b8b3f0612379a24020ff6cece749b603fc8",
+      "bytes": 3835
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "6704f86a2503043d1244cba66bb208bb262100397d5640394d73f32d4ede3854",
+      "bytes": 2223
+    },
+    {
+      "path": "package.json",
+      "sha256": "ebb4ba4d0a0f62932f1e9d15b72a0f951f54e516e2a9032583975a8f23e82e69",
+      "bytes": 447
+    },
+    {
+      "path": "runtime/unknown-home-access.js",
+      "sha256": "ab1bf6b0751effa065ecb4c76c40609e4522609803eeec04b608c4dd7730fb43",
+      "bytes": 13095
+    },
+    {
+      "path": "runtime/unknown-home-keyserver.js",
+      "sha256": "627811d433fd1d171c9ebc957466188d6e0ee328cd290be1f258eb99d304373f",
+      "bytes": 1923
+    }
+  ]
+}
