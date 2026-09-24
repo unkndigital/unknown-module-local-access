@@ -1,6 +1,6 @@
 {
   "name": "unknown-module-local-access",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "description": "Account-free local root SSH and owner-controlled key pairing, independent of LG account authentication.",
   "license": "MIT",
